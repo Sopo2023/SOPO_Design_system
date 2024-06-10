@@ -21,6 +21,8 @@ importers:
         specifier: ^3.2.5
         version: 3.2.5
 
+  packages/hooks: {}
+
   packages/styles: {}
 
 packages:
