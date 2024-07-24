@@ -1,0 +1,9 @@
+export { default as PretendardRegular } from "./Pretendard-Regular.otf";
+export { default as PretendardBold } from "./Pretendard-Bold.otf";
+export { default as PretendardExtraBold } from "./Pretendard-ExtraBold.otf";
+export { default as PretendardExtraLight } from "./Pretendard-ExtraLight.otf";
+export { default as PretendardBlack } from "./Pretendard-Black.otf";
+export { default as PretendardLight } from "./Pretendard-Light.otf";
+export { default as PretendardMedium } from "./Pretendard-Medium.otf";
+export { default as PretendardSemiBold } from "./Pretendard-SemiBold.otf";
+export { default as PretendardThin } from "./Pretendard-Thin.otf";

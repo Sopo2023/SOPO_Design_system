@@ -1,0 +1,17 @@
+{
+  "name": "@sopo-web/foundations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "styled-components": "^6.1.11",
+    "typescript": "^5.5.4"
+  }
+}

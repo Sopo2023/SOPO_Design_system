@@ -5,6 +5,6 @@
     "outDir": "dist",
     "rootDir": "src"
   },
-  "extends": "../../tsconfig.base.json",
+  "extends": "../../config/tsconfig/tsconfig.json",
   "include": ["./src"]
 }
