@@ -1,36 +1,36 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { SOPOHeadline } from "./SOPOHeadline";
+import { SOPOTitle2 } from "./SOPOTitle2";
 
 const meta = {
-  title: "ui/SOPOTypograyphy/SOPOHeadline",
-  component: SOPOHeadline,
+  title: "ui/SOPOTypograyphy/SOPOTitle2",
+  component: SOPOTitle2,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof SOPOHeadline>;
+} satisfies Meta<typeof SOPOTitle2>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const HeadlineLarge: Story = {
+export const Title2Bold: Story = {
   args: {
-    fontScale: "Large",
+    fontThickness: "Bold",
     text: "소포는 선배와 후배를 이어주는 플렛폼입니다",
   },
 };
 
-export const HeadlineMedium: Story = {
+export const Title2Medium: Story = {
   args: {
-    fontScale: "Medium",
+    fontThickness: "Medium",
     text: "소포는 선배와 후배를 이어주는 플렛폼입니다",
   },
 };
 
-export const HeadlineSmall: Story = {
+export const Title2Regular: Story = {
   args: {
-    fontScale: "Small",
+    fontThickness: "Regular",
     text: "소포는 선배와 후배를 이어주는 플렛폼입니다",
   },
 };

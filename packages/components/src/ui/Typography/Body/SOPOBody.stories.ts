@@ -14,23 +14,23 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const BodyLarge: Story = {
+export const BodyBold: Story = {
   args: {
-    fontScale: "Large",
+    fontThickness: "Bold",
     text: "소포는 선배와 후배를 이어주는 플렛폼입니다",
   },
 };
 
 export const BodyMedium: Story = {
   args: {
-    fontScale: "Medium",
+    fontThickness: "Medium",
     text: "소포는 선배와 후배를 이어주는 플렛폼입니다",
   },
 };
 
-export const BodySmall: Story = {
+export const BodyRegular: Story = {
     args: {
-      fontScale: "Small",
+      fontThickness: "Regular",
       text: "소포는 선배와 후배를 이어주는 플렛폼입니다",
     },
   };

@@ -1,23 +1,23 @@
 import React from "react";
-import type { FontScale, TypographyProps } from "../../types";
+import type { FontThickness, TypographyProps } from "../types";
 import { SOPOTypography } from "@sopo-web/styles";
 import styled, { type RuleSet } from "styled-components";
 
 export const SOPOBody = ({
   text,
-  fontScale = "Medium",
+  fontThickness = "Medium",
   customStyle,
   ...props
 }: TypographyProps) => {
   return (
-    <BodyText $fontScale={fontScale} $customStyle={customStyle!} {...props}>
+    <BodyText $fontThickness={fontThickness} $customStyle={customStyle!} {...props}>
       {text}
     </BodyText>
   );
 };
 
-const BodyText = styled.p<{ $fontScale: FontScale; $customStyle: RuleSet }>`
+const BodyText = styled.p<{ $fontThickness: FontThickness; $customStyle: RuleSet }>`
   margin: 0;
-  ${({ $fontScale }) => SOPOTypography.Body[$fontScale]}
+  ${({ $fontThickness }) => SOPOTypography.Body[$fontThickness]}
   ${({ $customStyle }) => $customStyle}
 `;

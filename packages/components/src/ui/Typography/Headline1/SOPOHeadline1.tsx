@@ -3,21 +3,21 @@ import type { FontThickness, TypographyProps } from "../types";
 import { SOPOTypography } from "@sopo-web/styles";
 import styled, { type RuleSet } from "styled-components";
 
-export const SOPOLabel = ({
+export const SOPOHeadline1 = ({
   text,
   fontThickness = "Medium",
   customStyle,
   ...props
 }: TypographyProps) => {
   return (
-    <LabelText $fontThickness={fontThickness} $customStyle={customStyle!} {...props}>
+    <HeadlineText $fontThickness={fontThickness} $customStyle={customStyle!} {...props}>
       {text}
-    </LabelText>
+    </HeadlineText>
   );
 };
 
-const LabelText = styled.p<{ $fontThickness: FontThickness; $customStyle: RuleSet }>`
+const HeadlineText = styled.p<{ $fontThickness: FontThickness; $customStyle: RuleSet }>`
   margin: 0;
-  ${({ $fontThickness }) => SOPOTypography.Label[$fontThickness]}
+  ${({ $fontThickness }) => SOPOTypography.Headline1[$fontThickness]}
   ${({ $customStyle }) => $customStyle}
 `;

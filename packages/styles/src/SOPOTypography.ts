@@ -1,85 +1,139 @@
 import { css, type RuleSet } from "styled-components";
 
 export type TextSize = {
-  Large: RuleSet;
+  Bold: RuleSet;
   Medium: RuleSet;
-  Small: RuleSet;
+  Regular: RuleSet;
 };
 
 export type TypographyStyles = {
-  Headline: TextSize;
-  Title: TextSize;
+  Title1: TextSize;
+  Title2: TextSize;
+  Headline1: TextSize;
+  Headline2: TextSize;
   Body: TextSize;
   Label: TextSize;
+  Caption: TextSize;
 };
 
 export const SOPOTypography: TypographyStyles = Object.freeze({
-  Headline: {
-    Large: css`
-      font-family: "pretendard-ExtraBold" !important;
+  Title1: {
+    Bold: css`
+      font-family: "pretendard-Bold" !important;
       font-size: 32px;
-      line-height: 40px;
+      line-height: 130%;
     `,
     Medium: css`
-      font-family: "pretendard-Bold" !important;
-      font-size: 28px;
-      line-height: 32px;
+      font-family: "pretendard-Medium" !important;
+      font-size: 32px;
+      line-height: 130%;
     `,
-    Small: css`
-      font-family: "pretendard-Bold" !important;
-      font-size: 24px;
-      line-height: 32px;
+    Regular: css`
+      font-family: "pretendard-regular" !important;
+      font-size: 32px;
+      line-height: 130%;
     `,
   },
-  Title: {
-    Large: css`
+  Title2: {
+    Bold: css`
       font-family: "pretendard-Bold" !important;
-      font-size: 22px;
-      line-height: 28px;
+      font-size: 28px;
+      line-height: 130%;
     `,
     Medium: css`
-      font-family: "pretendard-Bold" !important;
-      font-size: 18px;
-      line-height: 26px;
+      font-family: "pretendard-Medium" !important;
+      font-size: 28px;
+      line-height: 130%;
     `,
-    Small: css`
+    Regular: css`
+      font-family: "pretendard-regular" !important;
+      font-size: 28px;
+      line-height: 130%;
+    `,
+  },
+  Headline1: {
+    Bold: css`
       font-family: "pretendard-Bold" !important;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 24px;
+      line-height: 130%;
+    `,
+    Medium: css`
+      font-family: "pretendard-Medium" !important;
+      font-size: 24px;
+      line-height: 130%;
+    `,
+    Regular: css`
+      font-family: "pretendard-regular" !important;
+      font-size: 24px;
+      line-height: 130%;
+    `,
+  },
+  Headline2: {
+    Bold: css`
+      font-family: "pretendard-Bold" !important;
+      font-size: 20px;
+      line-height: 130%;
+    `,
+    Medium: css`
+      font-family: "pretendard-Medium" !important;
+      font-size: 20px;
+      line-height: 130%;
+    `,
+    Regular: css`
+      font-family: "pretendard-regular" !important;
+      font-size: 20px;
+      line-height: 130%;
     `,
   },
   Body: {
-    Large: css`
-      font-family: "pretendard-SemiBold" !important;
-      font-size: 18px;
-      line-height: 26px;
+    Bold: css`
+      font-family: "pretendard-Bold" !important;
+      font-size: 16px;
+      line-height: 130%;
     `,
     Medium: css`
-      font-family: "pretendard-SemiBold" !important;
-      font-size: 16px;
-      line-height: 24px;
-    `,
-    Small: css`
       font-family: "pretendard-Medium" !important;
-      font-size: 14px;
-      line-height: 20px;
+      font-size: 16px;
+      line-height: 130%;
+    `,
+    Regular: css`
+      font-family: "pretendard-regular" !important;
+      font-size: 16px;
+      line-height: 130%;
     `,
   },
   Label: {
-    Large: css`
+    Bold: css`
+      font-family: "pretendard-Bold" !important;
+      font-size: 14px;
+      line-height: 130%;
+    `,
+    Medium: css`
       font-family: "pretendard-Medium" !important;
       font-size: 14px;
-      line-height: 20px;
+      line-height: 130%;
+    `,
+    Regular: css`
+      font-family: "pretendard-regular" !important;
+      font-size: 14px;
+      line-height: 130%;
+    `,
+  },
+  Caption: {
+    Bold: css`
+      font-family: "pretendard-Bold" !important;
+      font-size: 12px;
+      line-height: 130%;
     `,
     Medium: css`
       font-family: "pretendard-Medium" !important;
       font-size: 12px;
-      line-height: 16px;
+      line-height: 130%;
     `,
-    Small: css`
-      font-family: "pretendard-Normal" !important;
-      font-size: 11px;
-      line-height: 16px;
+    Regular: css`
+      font-family: "pretendard-regular" !important;
+      font-size: 12px;
+      line-height: 130%;
     `,
   },
 });
