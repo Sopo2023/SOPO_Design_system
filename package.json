@@ -5,10 +5,13 @@
     "@changesets/cli": "^2.27.1",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "turbo": "^2.0.9"
   },
   "scripts": {
+    "build": "turbo run build",
     "prepare": "husky",
+    "storybook": "turbo run storybook  --filter=./packages/components",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "lint-staged": {
