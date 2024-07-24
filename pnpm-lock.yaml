@@ -15,7 +15,7 @@ importers:
         specifier: ^9.0.11
         version: 9.0.11
       lint-staged:
-        specifier: ^15.2.2
+        specifier: ^15.2.4
         version: 15.2.4
       prettier:
         specifier: ^3.2.5
