@@ -3,8 +3,10 @@
     "declaration": true,
     "emitDeclarationOnly": true,
     "outDir": "dist",
-    "rootDir": "src"
+    "rootDir": "src",
+    "esModuleInterop": true,
+    "jsx": "react"
   },
-  "extends": "../../config/tsconfig/tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "include": ["./src"]
 }
