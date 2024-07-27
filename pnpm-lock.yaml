@@ -106,6 +106,13 @@ importers:
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
+    devDependencies:
+      '@sopo-web/assets':
+        specifier: workspace:*
+        version: link:../assets
+      '@types/react':
+        specifier: ^18.3.3
+        version: 18.3.3
 
   packages/hooks:
     dependencies:
