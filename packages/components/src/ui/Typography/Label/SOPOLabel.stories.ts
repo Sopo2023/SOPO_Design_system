@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { SOPOLabel } from "./SOPOLabel";
 
 const meta = {
-  title: "ui/SOPOTypograyphy/SOPOLabel",
+  title: "Typograyphy/SOPOTypograyphy/SOPOLabel",
   component: SOPOLabel,
   parameters: {
     layout: "centered",

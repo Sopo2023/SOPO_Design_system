@@ -12,7 +12,6 @@ export default meta;
 
 export const Toggle: StoryObj<typeof ToggleButton> = {
   args: {
-    disabled: false,
     customStyle: {} as CSSProperties,
     onclick: () => {},
   },
