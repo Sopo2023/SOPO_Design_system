@@ -14,5 +14,7 @@ declare module "styled-components" {
     disable:string;
     lightDisable:string;
     label:string;
+    white:string;
+    Black:string;
   }
 }

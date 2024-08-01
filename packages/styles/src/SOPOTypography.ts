@@ -1,5 +1,6 @@
 import { css, type RuleSet } from "styled-components";
 
+
 export type TextSize = {
   Bold: RuleSet;
   Medium: RuleSet;

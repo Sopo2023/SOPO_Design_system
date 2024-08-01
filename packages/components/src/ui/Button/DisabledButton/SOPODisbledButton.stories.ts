@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { SOPODisbledButton } from "./SOPODisbledButton";
-import { css } from "styled-components";
+import { CSSProperties } from "react";
 
 const meta = {
-  title: "ui/DodamButton/SOPODisbledButton",
+  title: "ui/SOPOButton/SOPODisbledButton",
   component: SOPODisbledButton,
   parameters: {
     layout: "centered",
@@ -17,9 +17,11 @@ type Story = StoryObj<typeof meta>;
 
 export const StyledContentButtonButton: Story = {
   args: {
-    children: "svg 아이콘",
-    typography: ["Body", "Medium"],
-    customStyle: css``,
+    children: "넘어가요",
+    typography: ["Body", "Bold"],
+    disabled:false,
+    buttonSize: "default", 
+    customStyle: {} as CSSProperties, 
+    onclick:()=>{},
   },
 };
-
