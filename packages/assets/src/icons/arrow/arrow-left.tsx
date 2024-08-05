@@ -1,6 +1,6 @@
 import React from "react";
-import { IconProps } from "./type";
-import { StyledPath, StyledSvg } from "./style";
+import { IconProps } from "../type";
+import { StyledPath, StyledSvg } from "../style";
 
 export const ArrowLeft = ({ size = 24, color, customStyle }: IconProps) => {
   return (
