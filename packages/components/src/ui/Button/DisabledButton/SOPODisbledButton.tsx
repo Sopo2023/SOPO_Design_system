@@ -13,12 +13,13 @@ import {SOPODisbledButtonProps, TypographyType, ButtonSize} from "../types"
 
 
 export const SOPODisbledButton = ({
+  type,
   children,
   typography = ["Body", "Bold"],
   buttonSize,
   radius = "Medium",
   customStyle,
-  disabled,
+  disabled = false,
   onclick,
   ...props
 }: SOPODisbledButtonProps) => {
@@ -26,7 +27,7 @@ export const SOPODisbledButton = ({
     <StyledDisbledButton
       typography={typography}
       radius={radius}
-      style={customStyle}
+      customStyle={customStyle!}
       buttonSize={buttonSize}
       disabled={disabled}
       onClick={onclick}
@@ -41,6 +42,7 @@ const StyledDisbledButton = styled.button<{
   typography: TypographyType;
   radius: ShapeSizeType;
   buttonSize: ButtonSize;
+  customStyle: RuleSet;
 }>`
   min-width: 40px;
   min-height: 40px;
@@ -51,6 +53,7 @@ const StyledDisbledButton = styled.button<{
   border: none;
   cursor: pointer;
   color: ${SOPOLightTheme.white};
+  ${({ customStyle }) => customStyle};
   ${({ buttonSize }) => {
     return ButtonSizeStyle[buttonSize];
   }}

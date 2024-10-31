@@ -5,19 +5,19 @@ import styled, { type RuleSet } from "styled-components";
 
 export const SOPOHeadline1 = ({
   text,
-  fontThickness = "Medium",
+  fontScale = "Medium",
   customStyle,
   ...props
 }: TypographyProps) => {
   return (
-    <HeadlineText $fontThickness={fontThickness} $customStyle={customStyle!} {...props}>
+    <HeadlineText $fontScale={fontScale} $customStyle={customStyle!} {...props}>
       {text}
     </HeadlineText>
   );
 };
 
-const HeadlineText = styled.p<{ $fontThickness: FontThickness; $customStyle: RuleSet }>`
+const HeadlineText = styled.p<{ $fontScale: FontThickness; $customStyle: RuleSet }>`
   margin: 0;
-  ${({ $fontThickness }) => SOPOTypography.Headline1[$fontThickness]}
+  ${({ $fontScale }) => SOPOTypography.Headline1[$fontScale]}
   ${({ $customStyle }) => $customStyle}
 `;

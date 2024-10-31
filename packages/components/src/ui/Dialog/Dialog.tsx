@@ -2,7 +2,7 @@ import { SOPOShape, ShapeSizeType } from "@sopo-web/styles";
 import React from "react";
 import styled, { CSSProperties, RuleSet, css } from "styled-components";
 import { Column, FlexLayout, Row } from "../../layout";
-import { DodamBody, DodamTitle } from "../Typography";
+import { SOPOBody, SOPOHeadline1 } from "../Typography";
 import {  SOPODisbledButton } from "../Button/DisabledButton";
 
 type DialogHandlerType = {
@@ -22,7 +22,7 @@ type DialogType =
       dismiss: DialogHandlerType;
     };
 
-export interface DodamDialogProps {
+export interface SOPODialogProps {
   title: string;
   text: string;
   type: DialogType;
@@ -34,13 +34,13 @@ export interface DodamDialogProps {
   radius?: ShapeSizeType;
 }
 
-export const DodamDialog = ({
+export const SOPODialog = ({
   title,
   text,
   type,
   color,
   radius = "ExtraLarge",
-}: DodamDialogProps) => {
+}: SOPODialogProps) => {
   return (
     <StyledDialog
       dialogType={type.dialog}
@@ -48,12 +48,12 @@ export const DodamDialog = ({
       backgroundColor={color?.dialogBackgroundColor}
     >
       <Column rowGap={12} padding={type.dialog === "CONFIRM" ? "6px" : "12px"}>
-        <DodamTitle
-          fontScale="Large"
+        <SOPOHeadline1
+          fontScale="Bold"
           text={title}
           customStyle={StyledTitle(color?.titleColor)}
         />
-        <DodamBody text={text} customStyle={StyledText(color?.textColor)} />
+        <SOPOBody text={text} customStyle={StyledText(color?.textColor)} />
       </Column>
 
       {type.dialog === "CONFIRM" ? (
@@ -66,7 +66,7 @@ export const DodamDialog = ({
             {type.dismiss.content}
           </SOPODisbledButton>
           <SOPODisbledButton
-            customStyle={type.confirm.style}
+               customStyle={type.dismiss.style}
             onClick={type.confirm.onClick}
             radius="Medium"
           >
@@ -75,8 +75,8 @@ export const DodamDialog = ({
         </Row>
       ) : (
         <Row justifyContent="flex-end">
-          <DodamBody
-            fontScale="Large"
+          <SOPOBody
+            fontScale="Bold"
             text={type.close.content}
             onClick={type.close.onClick}
             customStyle={type.close.style}

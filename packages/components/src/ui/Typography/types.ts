@@ -5,7 +5,7 @@ export type FontThickness = "Bold" | "Medium" | "Regular";
 
 export interface TypographyProps extends HTMLAttributes<HTMLParagraphElement> {
   text: string;
-  fontThickness?: FontThickness;
+  fontScale?: FontThickness;
   customStyle?: RuleSet;
 }
 

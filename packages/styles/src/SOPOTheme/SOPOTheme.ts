@@ -1,7 +1,6 @@
-import { SOPOTheme } from "styled-components";
 import { SOPOColor } from "@sopo-web/foundations";
 
-export const SOPOLightTheme: SOPOTheme = Object.freeze({
+export const SOPOLightTheme= Object.freeze({
   primaryLight: SOPOColor.Green60,
   onPrimary: SOPOColor.Gray50,
   signBackground: SOPOColor.Green90,
@@ -16,4 +15,5 @@ export const SOPOLightTheme: SOPOTheme = Object.freeze({
   label: SOPOColor.Neutral70,
   white: SOPOColor.white,
   Black: SOPOColor.black,
+  dialogButton : SOPOColor.Gray80,
 });

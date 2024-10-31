@@ -6,11 +6,12 @@ import {
 
 export interface SOPODisbledButtonProps
   extends HTMLAttributes<HTMLButtonElement> {
+  type:RuleSet;
   children: ReactNode;
   buttonSize: ButtonSize;
   typography?: TypographyType;
   radius?: ShapeSizeType;
-  customStyle?: CSSProperties;
+  customStyle?: RuleSet;
   disabled: boolean;
   onclick: () => void;
 }
