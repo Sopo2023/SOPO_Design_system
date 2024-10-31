@@ -25,6 +25,6 @@ export const SOPOShape: ShapeStyles = Object.freeze({
     border-radius: 12px;
   `,
   ExtraLarge: css`
-    border-radius: 100px;
+    border-radius: 28px;
   `,
 });

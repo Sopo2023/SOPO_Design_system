@@ -18,7 +18,7 @@ type Story = StoryObj<typeof meta>;
 const AlertText = css`
   cursor: pointer;
   padding: 8px 12px;
-  color: ${({ theme }) => SOPOLightTheme.primaryLight};
+  color: ${({ theme }) => theme.primaryLight};
 `;
 
 export const AlertDialog: Story = {

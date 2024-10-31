@@ -94,9 +94,9 @@ const StyledDialog = styled.div<{
 }>`
   min-width: 280px;
   max-width: 560px;
-
-  background-color: ${({ backgroundColor, theme }) =>
-    backgroundColor || theme.surfaceContainerHigh};
+background-color: white;
+  /* background-color: ${({ backgroundColor, theme }) =>
+    backgroundColor || theme.white}; */
   padding: ${({ dialogType }) => (dialogType === "ALERT" ? "12px" : "18px")};
 
   ${({ radius }) => SOPOShape[radius]}
