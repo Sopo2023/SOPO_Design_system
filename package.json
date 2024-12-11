@@ -1,6 +1,8 @@
 {
-  "name": "ads-web",
-  "private": true,
+  "name": "sds",
+  "version": "0.0.1",
+  "author": "ftery0",
+  "license":"MIT",
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
     "@vitejs/plugin-react": "^4.3.1",
