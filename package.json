@@ -1,6 +1,6 @@
 {
   "name": "sopo-ds",
-  "version": "0.0.4",
+  "version": "0.0.8",
   "author": "ftery0",
   "type": "module",
   "types": "dist/index.d.ts",
@@ -16,7 +16,7 @@
     "@sopo-web/styles": "workspace:*"
   },
   "keywords": [
-    "react",
+    "react",  
     "ui",
     "design-system",
     "react-components",

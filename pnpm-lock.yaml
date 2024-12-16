@@ -7,6 +7,22 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@sopo-web/assets':
+        specifier: workspace:*
+        version: link:packages/assets
+      '@sopo-web/components':
+        specifier: workspace:*
+        version: link:packages/components
+      '@sopo-web/foundations':
+        specifier: workspace:*
+        version: link:packages/foundations
+      '@sopo-web/hooks':
+        specifier: workspace:*
+        version: link:packages/hooks
+      '@sopo-web/styles':
+        specifier: workspace:*
+        version: link:packages/styles
     devDependencies:
       '@changesets/cli':
         specifier: ^2.27.1
