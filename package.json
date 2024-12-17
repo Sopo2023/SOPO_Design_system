@@ -1,27 +1,48 @@
 {
   "name": "sopo-ds",
-  "version": "0.0.8",
+  "version": "0.0.1",
   "author": "ftery0",
   "type": "module",
   "types": "dist/index.d.ts",
-  "license":"MIT",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/cjs/index.js",
+  "license": "MIT",
   "description": "SOPO 디자인 시스템",
-  "main": "dist/index.js",
   "private": false,
   "dependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.26.0",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-image": "^3.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@rollup/plugin-url": "^8.0.2",
     "@sopo-web/assets": "workspace:*",
     "@sopo-web/components": "workspace:*",
-    "@sopo-web/hooks": "workspace:*",
     "@sopo-web/foundations": "workspace:*",
-    "@sopo-web/styles": "workspace:*"
+    "@sopo-web/hooks": "workspace:*",
+    "@sopo-web/styles": "workspace:*",
+    "@svgr/rollup": "^8.1.0",
+    "babel-loader": "^9.2.1",
+    "rollup": "^4.28.1",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
-    "react",  
+    "react",
     "ui",
     "design-system",
     "react-components",
     "components",
-    "emotion",
     "typescript",
     "library"
   ],
@@ -35,11 +56,17 @@
     "husky": "^9.0.11",
     "lint-staged": "^15.2.4",
     "prettier": "^3.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "styled-components": "^6.1.11",
     "turbo": "^2.0.9",
     "vite": "^5.3.4"
   },
   "scripts": {
-     "build": "trubo run build",
+    "build": "turbo run build && pnpm build:bundle",
+    "build:bundle": "tsc -p tsconfig.json && pnpm bundle",
+    "bundle": "rollup -c",
+    "build-storybook": "turbo run build-storybook",
     "prepare": "husky",
     "storybook": "turbo run storybook  --filter=./packages/components",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
