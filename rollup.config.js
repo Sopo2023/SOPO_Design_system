@@ -12,7 +12,7 @@ const pkg = require("./package.json");
 const external = ["react", "react-dom", "styled-components"];
 export default [
   {
-    input: "src/index.ts",
+    input: "./packages/index.ts",
     output: [
       {
         file: pkg.main,

@@ -1,6 +1,6 @@
 {
-  "name": "sopo-ds",
-  "version": "0.0.1",
+  "name": "sopo",
+  "version": "0.1.2",
   "author": "ftery0",
   "type": "module",
   "types": "dist/index.d.ts",
@@ -22,11 +22,6 @@
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-typescript": "^12.1.2",
     "@rollup/plugin-url": "^8.0.2",
-    "@sopo-web/assets": "workspace:*",
-    "@sopo-web/components": "workspace:*",
-    "@sopo-web/foundations": "workspace:*",
-    "@sopo-web/hooks": "workspace:*",
-    "@sopo-web/styles": "workspace:*",
     "@svgr/rollup": "^8.1.0",
     "babel-loader": "^9.2.1",
     "rollup": "^4.28.1",
@@ -36,6 +31,10 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/Sopo2023/SOPO_Design_system/issues",
+    "email": "ftery030215@naver.com"
   },
   "keywords": [
     "react",
